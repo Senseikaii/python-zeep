@@ -63,7 +63,7 @@ class AnySimpleType(AnyType):
         if xmlelement.text is None:
             return
         try:
-            return self.pythonvalue(xmlelement.text)
+            return 
         except (TypeError, ValueError):
             logger.exception("Error during xml -> python translation")
             return None
